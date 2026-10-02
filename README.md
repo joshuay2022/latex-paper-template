@@ -1,1 +1,1 @@
-# latex-paper-template
+## Latex Paper Template

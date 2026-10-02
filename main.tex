@@ -1,0 +1,65 @@
+
+\documentclass{article} % For LaTeX2e
+\usepackage{c_style,times}
+
+\input{math_commands.tex}
+
+\usepackage{hyperref}
+\usepackage{url}
+
+
+\title{Formatting Instructions for Submissions}
+
+% This header and its bottom rule appear on the first page only.
+\firstpageheader{Paper header}
+
+% Names are bold and centered. The second argument gives affiliation numbers
+% (and optional symbols). \And separates names; \AND starts a new row.
+\author{%
+\authorname{Antiquus S.~Hippocampus}{1}\And
+\authorname{Natalia Cerebro}{1}\And
+\authorname{Amelie P. Amygdale}{1}\thanks{Use footnote for providing further
+information about author (webpage, alternative address)---\emph{not} for
+acknowledging funding agencies. Funding acknowledgements go at the end of
+ the paper.}
+\AND
+\authorname{Ji Q. Ren}{2}\And
+\authorname{Yevgeny LeNet}{2}\And
+\authorname{Coauthor}{3}
+}
+
+% List each shared affiliation once, below all author names.
+\affiliations{%
+\affiliation{1}{Department of Computer Science, Cranberry-Lemon University, Pittsburgh, PA 15213, USA}\\[0.4em]
+\affiliation{2}{Department of Computational Neuroscience, University of the Witwatersrand, Joburg, South Africa}\\[0.4em]
+\affiliation{3}{Affiliation, Address}\\[0.6em]
+\texttt{\{hippo,brain,jen\}@cs.cranberry-lemon.edu}\\
+\texttt{\{robot,net\}@wits.ac.za}\quad\texttt{email}
+}
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+\begin{document}
+
+
+\maketitle
+
+\begin{abstract}
+   Abstract goes here.
+\end{abstract}
+
+\section{Introduction}
+Introduction goes here. Example citation~\cite{Hinton06}.
+
+
+
+\bibliography{c_style}
+\bibliographystyle{c_style}
+
+\appendix
+\section{Appendix}
+You may include other additional sections here.
+
+
+\end{document}
